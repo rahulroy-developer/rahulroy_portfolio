@@ -475,19 +475,19 @@ img {
 }
 
 .about__info div:hover .about__info-title {
-  color: var(--secondary-color); /* Change color on hover */
+  color: var(--second-color); /* Change color on hover */
 }
 
 .about__info-title {
   display: block;
   font-size: var(--h2-font-size); /* Adjust size for visibility */
   font-weight: 700; /* Make numbers bold */
-  color: var(--title-color); /* Keep it consistent with title color */
+  color: black; /* Keep it consistent with title color */
 }
 
 .about__info-name {
   font-size: var(--smaller-font-size);
-  color: var(--title-color);
+  color: black;
   margin-top: 0.5rem;
   font-weight: 400; /* Keep the descriptive text normal weight */
 }
