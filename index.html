@@ -34,7 +34,6 @@
     />
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -152,7 +151,13 @@
         </div>
         <div class="nav__btns">
           <!-- Theme Change button -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <i
+            class="uil uil-moon change-theme"
+            id="theme-button"
+            aria-label="Toggle Dark Mode"
+            role="button"
+            tabindex="0"
+          ></i>
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
           </div>
@@ -170,18 +175,24 @@
               <a
                 href="https://www.linkedin.com/in/rahulroy-developer"
                 class="home__social-icon"
+                target="_blank"
+                aria-label="LinkedIn"
               >
                 <i class="uil uil-linkedin-alt"></i>
               </a>
               <a
                 href="https://github.com/rahulroy-developer"
                 class="home__social-icon"
+                target="_blank"
+                aria-label="GitHub"
               >
                 <i class="uil uil-github-alt"></i>
               </a>
               <a
                 href="https://x.com/RahulRoy772103?t=an_MDXueyBZEg_1Ypqg8aw&s=08"
                 class="home__social-icon"
+                target="_blank"
+                aria-label="Twitter"
               >
                 <i class="uil uil-twitter-alt"></i>
               </a>
@@ -190,7 +201,9 @@
               <div class="home__circle">
                 <img
                   src="assets/img/pic1.jpg"
-                  alt="Profile Picture"
+                  alt="Rahul Roy - Software Developer"
+                  width="280"
+                  height="280"
                   class="home__blob-img"
                 />
               </div>
@@ -223,7 +236,14 @@
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My Introduction</span>
         <div class="about__container container grid">
-          <img src="assets/img/about.jpg" alt="" class="about__img" />
+          <img
+            src="assets/img/about.jpg"
+            alt="Rahul Roy working on laptop"
+            width="350"
+            height="350"
+            class="about__img"
+            loading="lazy"
+          />
 
           <div class="about__data">
             <p class="about__description">
@@ -818,8 +838,11 @@
               </div>
               <img
                 src="assets/img/portfolio2.png"
-                alt="File Manager"
+                alt="Task Master Project Snapshot"
+                width="300"
+                height="180"
                 class="project-img"
+                loading="lazy"
               />
             </div>
             <div class="card-content">
@@ -867,8 +890,11 @@
               </div>
               <img
                 src="assets/img/portfolio4.jpg"
-                alt="Portfolio Website"
+                alt="Task Master Project Snapshot"
+                width="300"
+                height="180"
                 class="project-img"
+                loading="lazy"
               />
             </div>
             <div class="card-content">
@@ -916,8 +942,11 @@
               </div>
               <img
                 src="assets/img/portfolio1.jpg"
-                alt="Todo App"
+                alt="Task Master Project Snapshot"
+                width="300"
+                height="180"
                 class="project-img"
+                loading="lazy"
               />
             </div>
             <div class="card-content">
@@ -961,8 +990,11 @@
               </div>
               <img
                 src="assets/img/portfolio3.jpg"
-                alt="Home Page"
+                alt="Task Master Project Snapshot"
+                width="300"
+                height="180"
                 class="project-img"
+                loading="lazy"
               />
             </div>
             <div class="card-content">
@@ -1135,15 +1167,20 @@
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
-    <a href="#" class="scrollup" id="scroll-up">
+    <a href="#" class="scrollup" id="scroll-up" aria-label="Scroll to top">
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
     <!--==================== SWIPER JS ====================-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
-    <script src="assets/js/main.js"></script>
+    <script defer src="assets/js/main.js"></script>
+
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
   </body>
 </html>
 <!-------Email js-->
